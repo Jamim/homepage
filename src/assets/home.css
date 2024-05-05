@@ -1,0 +1,120 @@
+:root {
+  --distance: 0.05em;
+
+  --very-light-orange: #ffcf76; /* Very light orange */
+
+  --caret: var(--very-light-orange);
+  --input: #c198e2;
+  --focus-background: #bae498; /* Complementary to --input */
+
+  --header-link: #d3d3d3; /* Light gray */
+  --header-link-focus: var(--very-light-orange);
+
+  --link: #228b22; /* Forest green */
+  --link-visited: #8fbc8f; /* Dark sea green */
+}
+
+html,
+body {
+  font-size: 25pt;
+  font-family: Cantarell;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+home {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  margin: 0.8em;
+  font-size: 0.8em;
+  text-align: center;
+
+  a {
+    color: var(--header-link);
+    display: inline-block;
+    margin: var(--distance);
+    padding: 0.4em;
+    height: 1em;
+
+    .svg-inline--fa {
+      width: 1em;
+      vertical-align: 0;
+    }
+  }
+
+  a:focus,
+  a:hover {
+    color: var(--header-link-focus);
+  }
+}
+
+query {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  margin: 0.8em;
+}
+
+input {
+  caret-color: var(--caret);
+  color: var(--input);
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+::selection {
+  background: var(--focus-background);
+}
+
+links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: var(--link);
+    display: block;
+  }
+
+  a:visited {
+    color: var(--link-visited);
+  }
+}
+
+gentoo,
+packages {
+  margin-right: 1em;
+}
+
+span {
+  font-size: 0.7em;
+  color: var(--header-link);
+}
+
+gentoo:has(a:focus, a:hover) span,
+packages:has(a:focus, a:hover) span,
+search:has(a:focus, a:hover) span {
+  color: var(--header-link-focus);
+}
+
+a {
+  text-decoration: none;
+  margin-top: var(--distance);
+  padding: 0 0.3em 0.2em 0.3em;
+  border-radius: 0.2em;
+}
+
+a:focus,
+a:hover {
+  outline: none;
+  background: var(--focus-background);
+}

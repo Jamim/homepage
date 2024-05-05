@@ -1,0 +1,6 @@
+<svg width="1280pt" height="1280pt" preserveAspectRatio="xMidYMid" version="1.0" viewBox="0 0 1280 1280" xmlns="http://www.w3.org/2000/svg">
+	<g id="home" transform="matrix(.1 0 0 -.1 0 1243)" fill="#ffcf76">
+		<path id="roof" d="m0 6430 600-600 5800 5e3 5800-5e3 600 600-6400 5600z"/>
+		<path id="building" d="m2e3 6030v-6e3h3e3v2400h2800v-2400h3e3v6e3l-4400 3800z"/>
+	</g>
+</svg>

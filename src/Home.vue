@@ -52,6 +52,7 @@ window.onbeforeunload = () => localStorage.setItem('term', term.value)
       <pypi class="subgroup">
         <a :href="'https://pypi.org/project/' + term + '/'">pypi</a>
         <a :href="'https://pypistats.org/packages/' + term" class="sub">stats</a>
+        <a :href="'https://www.pepy.tech/projects/' + term" class="sub">pepy</a>
       </pypi>
       <a :href="'https://repology.org/project/' + term + '/versions'">repology</a>
     </packages>

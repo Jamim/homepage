@@ -95,6 +95,14 @@ links {
     align-items: center;
     text-align: center;
 
+    .subgroup {
+      display: flex;
+      flex-direction: row;
+      a.sub {
+        margin: auto var(--distance);
+      }
+    }
+
     a {
       margin: var(--distance) auto 0 auto;
     }
@@ -128,6 +136,11 @@ a {
   margin-top: var(--distance);
   padding: 0 0.3em 0.2em 0.3em;
   border-radius: 0.2em;
+}
+
+a.sub {
+  font-size: 0.5em;
+  margin-left: 1em;
 }
 
 a:focus,

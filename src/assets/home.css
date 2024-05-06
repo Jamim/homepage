@@ -78,15 +78,31 @@ input {
 links {
   display: flex;
   justify-content: center;
-  align-items: center;
 
   a {
     color: var(--link);
     display: block;
+    width: fit-content;
   }
 
   a:visited {
     color: var(--link-visited);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  links {
+    flex-direction: column;
+    text-align: center;
+
+    a {
+      margin: var(--distance) auto 0 auto;
+    }
+  }
+
+  gentoo,
+  packages {
+    margin-right: 0 !important;
   }
 }
 

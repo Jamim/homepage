@@ -77,7 +77,6 @@ input {
 
 links {
   display: flex;
-  justify-content: center;
 
   a {
     color: var(--link);
@@ -93,22 +92,26 @@ links {
 @media only screen and (max-width: 520px) {
   links {
     flex-direction: column;
+    align-items: center;
     text-align: center;
 
     a {
       margin: var(--distance) auto 0 auto;
     }
   }
-
-  gentoo,
-  packages {
-    margin-right: 0 !important;
-  }
 }
 
-gentoo,
-packages {
-  margin-right: 1em;
+#gentoo {
+  justify-content: right;
+}
+
+.group-wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.group {
+  margin: 0 0.4em;
 }
 
 span {
@@ -116,9 +119,7 @@ span {
   color: var(--header-link);
 }
 
-gentoo:has(a:focus, a:hover) span,
-packages:has(a:focus, a:hover) span,
-search:has(a:focus, a:hover) span {
+.group:has(a:focus, a:hover) span {
   color: var(--header-link-focus);
 }
 

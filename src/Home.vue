@@ -40,20 +40,24 @@ window.onbeforeunload = () => localStorage.setItem('term', term.value)
     />
   </query>
   <links>
-    <gentoo>
-      <span>gentoo</span>
-      <a :href="'https://bugs.gentoo.org/buglist.cgi?quicksearch=' + term">bugs</a>
-      <a :href="'https://github.com/gentoo/gentoo/pulls?q=is:pr+is:open+' + term">prs</a>
-    </gentoo>
-    <packages>
+    <div id="gentoo" class="group-wrapper">
+      <gentoo class="group">
+        <span>gentoo</span>
+        <a :href="'https://bugs.gentoo.org/buglist.cgi?quicksearch=' + term">bugs</a>
+        <a :href="'https://github.com/gentoo/gentoo/pulls?q=is:pr+is:open+' + term">prs</a>
+      </gentoo>
+    </div>
+    <packages class="group">
       <span>packages</span>
       <a :href="'https://pypi.org/project/' + term + '/'">pypi</a>
       <a :href="'https://repology.org/project/' + term + '/versions'">repology</a>
     </packages>
-    <search>
-      <span>search</span>
-      <a :href="'https://duckduckgo.com/?q=' + term">duckduckgo</a>
-      <a :href="'https://www.google.com/search?q=' + term">google</a>
-    </search>
+    <div class="group-wrapper">
+      <search class="group">
+        <span>search</span>
+        <a :href="'https://duckduckgo.com/?q=' + term">duckduckgo</a>
+        <a :href="'https://www.google.com/search?q=' + term">google</a>
+      </search>
+    </div>
   </links>
 </template>

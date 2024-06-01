@@ -45,6 +45,7 @@ window.onbeforeunload = () => localStorage.setItem('term', term.value)
         <span>gentoo</span>
         <a :href="'https://bugs.gentoo.org/buglist.cgi?quicksearch=' + term">bugs</a>
         <a :href="'https://github.com/gentoo/gentoo/pulls?q=is:pr+is:open+' + term">prs</a>
+        <a :href="'https://gpo.zugaina.org/Search?search=' + term">gpo</a>
       </gentoo>
     </div>
     <packages class="group">

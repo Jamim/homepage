@@ -60,7 +60,7 @@ window.onbeforeunload = () => localStorage.setItem('term', term.value)
     <div class="group-wrapper">
       <search class="group">
         <span>search</span>
-        <a :href="'https://duckduckgo.com/?q=' + term">duckduckgo</a>
+        <a :href="'https://duckduckgo.com/?q=' + term">🦆🦆🐾</a>
         <a :href="'https://www.google.com/search?q=' + term">google</a>
       </search>
     </div>
